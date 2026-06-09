@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U-Rate</title>
+    <link rel="stylesheet" href="U-Rate.css">
+</head>
+<body>
+    <h1>U-Rate</h1>
+
+    <form id="add-form">
+        <input type="text" id="title" placeholder="Title" required>
+        <input type="url" id="url" placeholder="https://..." required>
+        <input type="number" id="rating" min="1" max="6" placeholder="1-6">
+        <button type="submit">Add</button>
+    </form>
+
+    <div id="filters">
+        <button data-filter="Movie">Movie</button>
+    </div>
+
+    <div id="list"></div>
+
+    <script src="U-Rate.js"></script>
+</body>
+</html>
